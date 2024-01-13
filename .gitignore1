@@ -10,8 +10,6 @@
 
 # Executables
 *.exe
-*.rtexe
-**\Builds\**
 
 # Metadata
 *.aliases
