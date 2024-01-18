@@ -1,0 +1,26 @@
+
+VI		Notes
+
+ArmBegin2	-  Suggest naming this Arm2Begin
+		-  The NEO is a "brushless" motor.
+		-  Use "set limit switch config" for "forward" switch.  
+		   	Set to enabled to TRUE.
+		   	Set polarity to normally open.
+		-  Use "set limit switch config" for "reverse" switch.  
+		   	Set to enabled to TRUE.
+		   	Set polarity to normally open.
+		-  Use "Set Ramp Rate".  Suggest 0 to full speed in 0.2 seconds.
+		-  Use "Set sensor conversion".  For postion if 1 = Revloutions, 
+			use Deg/Revolutions and 1/GearRatio to calculate new
+			conversion factor.   Same thing for velocity.  Standard units 
+			are Revolution / Minute.  We know 1 Minute / 60 seconds 
+			and Deg/Revolutions and 1/GearRatio.
+		- set a value for initial position.  Put a note that this needs to be
+			set.
+ArmExecute2	- Suggest renaming this to Arm2Execute...
+		- This will be position control.  The math library now has a position
+			control routine.
+		- Read the sensors first ( position, velocity, forward and reverse limit switches )
+		- write these to network tables.
+		- use position control to set motor output.  We can discuss tuning.
+
