@@ -1,6 +1,36 @@
 
 VI		Notes
 
+- BoxBegin
+		- probably don't need current limits for either shooter or intake.  Suggest removing
+		- The sensor type for the built in is "hall..." not encoder.  (Encoder 
+			is for an externally attached encoder.
+		- suggest setting rate limit for shooter.  maybe 0.1 seconds to full speed.
+			this will limit the current draw and help battery
+		- suggest setting rate limit for intake.  maybe 0.1 seconds to full speed.
+			this will limit the current draw and help battery
+		- for intake the current gear ratio is 36:1.  Suggest setting the sensor scaling 1/36
+			so we can measure RPM of the intake wheels.  If you want the units to be
+			rev/seconds then multiply by 1/60....
+
+- Arm2Exec
+		- set "first time" setpoint equal to position so it doesnt move.
+		- for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
+			This helps arbitrate among competing commands.  
+		- use feedback to remember setpoint and then use case to set new setpoint based on commands
+			received.
+		- feed this setpoint and the position that is read from motor controller to the position control.
+		- write the result to the motor.
+		- the position control has inputs for the limit switches too.
+		- dont need to feed time to the write network table variables..
+
+
+- BoxExec
+		- for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
+			this helps arbitrate among commands.  Could just use individual bool cmd and process
+			in state machine.  (works the same.)
+		- dont need to feed time to the write network table variables..
+
 X ArmBegin2	X  Suggest naming this Arm2Begin 
 		X  The NEO is a "brushless" motor.
 		X  Use "set limit switch config" for "forward" switch.  
