@@ -13,6 +13,7 @@
 *.rtexe
 **\Builds\**
 **\builds\**
+builds\**
 
 # Metadata
 *.aliases
