@@ -1,6 +1,23 @@
 
 VI		Notes
 
+- ClimbBegin
+		- I didn't look, but ensure that there are current limits.  Ask build and electrical to
+			tell us what the current limits should be.
+		- ensure sensor scaling factor is set.
+		
+
+- ClimbExec
+		- do you want separate demands for left and right ??  You could use one demand for both.
+		- create a virtual forward limit switch.  This would be true if height is >= some constant.
+		- When hitting the bottom limit switch, suggest setting the position to 0.  Suggest that 
+			to ensure that there isn't a strange bounce process the raw limit switch value with
+			"on delay" then to an "edge on" then to the case statement that sets the position to
+			zero. 
+		- It would be okay to use the same set of tuning constants for left and right (this helps to ensure
+			that somehow the constants aren't different, resulting in different motor actions.
+
+
 - BoxBegin
 		- probably don't need current limits for either shooter or intake.  Suggest removing
 		- The sensor type for the built in is "hall..." not encoder.  (Encoder 
@@ -14,11 +31,15 @@ VI		Notes
 			rev/seconds then multiply by 1/60....
 
 - Arm2Exec
+		- When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
+			to ensure that there isn't a strange bounce process the raw limit switch value with
+			"on delay" then to an "edge on" then to the case statement that sets the position to
+			top value. 
+		- When hitting the bottom limit switch, suggest setting the position to bottom value.  Suggest that 
+			to ensure that there isn't a strange bounce process the raw limit switch value with
+			"on delay" then to an "edge on" then to the case statement that sets the position to
+			bottom value. 
 		- set "first time" setpoint equal to position so it doesnt move.
-		- for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
-			This helps arbitrate among competing commands.  
-		- use feedback to remember setpoint and then use case to set new setpoint based on commands
-			received.
 		- feed this setpoint and the position that is read from motor controller to the position control.
 		- write the result to the motor.
 		X the position control has inputs for the limit switches too.
