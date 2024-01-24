@@ -21,8 +21,8 @@ VI		Notes
 			received.
 		- feed this setpoint and the position that is read from motor controller to the position control.
 		- write the result to the motor.
-		- the position control has inputs for the limit switches too.
-		- dont need to feed time to the write network table variables..
+		X the position control has inputs for the limit switches too.
+		X dont need to feed time to the write network table variables..  Okayyyyyy
 
 
 - BoxExec
