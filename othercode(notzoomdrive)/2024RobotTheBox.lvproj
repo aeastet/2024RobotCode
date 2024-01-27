@@ -314,6 +314,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PID_autopid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_autopid.lvlib"/>
@@ -753,6 +754,12 @@ AddOutputFilter chunkFilter
 			<Item Name="ntcoreffi.dll" Type="Document" URL="ntcoreffi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="SDO_DRIVE_GET_GYRO.vi" Type="VI" URL="../Swerve_Drive_System/SDO_DRIVE_GET_GYRO.vi"/>
+			<Item Name="SDO_DRIVE_Get_KINEMATIC.vi" Type="VI" URL="../Swerve_Drive_System/SDO_DRIVE_Get_KINEMATIC.vi"/>
+			<Item Name="SDO_DRIVE_GET_MAX.vi" Type="VI" URL="../Swerve_Drive_System/SDO_DRIVE_GET_MAX.vi"/>
+			<Item Name="SDO_DRIVE_Get_ModulePositions.vi" Type="VI" URL="../Swerve_Drive_System/SDO_DRIVE_Get_ModulePositions.vi"/>
+			<Item Name="SDO_DRIVE_GLOBALS.vi" Type="VI" URL="../Swerve_Drive_System/SDO_DRIVE_GLOBALS.vi"/>
+			<Item Name="SDO_Vision_Get_Pose.vi" Type="VI" URL="../Vision_Interface/SDO_Vision_Get_Pose.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
