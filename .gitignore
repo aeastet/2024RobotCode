@@ -20,3 +20,7 @@
 *.aliases
 *.lvlps
 .cache/
+
+# nt tables log files
+*.wpilog
+
