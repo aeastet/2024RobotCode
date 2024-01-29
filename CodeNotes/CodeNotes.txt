@@ -2,57 +2,67 @@
 VI		Notes
 
 - ClimbBegin
-		- I didn't look, but ensure that there are current limits.  Ask build and electrical to
+		- Suggest setting the smart current limit to TRUE.  Currently this is an unwired input to this VI.
+			It defaults to FALSE.
+		X I didn't look, but ensure that there are current limits.  Ask build and electrical to
 			tell us what the current limits should be.
-		- ensure sensor scaling factor is set.
+		X ensure sensor scaling factor is set.
 		
 
 - ClimbExec
-		- do you want separate demands for left and right ??  You could use one demand for both.
+		- Climb is not rotational like the arm.  Do NOT use COSINE to compensate for the weight being lifted.
+		If the motor is pulling down (output is negative), leave alone.  If output is pushing up (output is
+		positive) multiply the output by a constant fractional number -- say 0.3.  
+		X do you want separate demands for left and right ??  You could use one demand for both.
 		- create a virtual forward limit switch.  This would be true if height is >= some constant.
 		- When hitting the bottom limit switch, suggest setting the position to 0.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			zero. 
-		- It would be okay to use the same set of tuning constants for left and right (this helps to ensure
+		- It would be best to use the same set of tuning constants for left and right (this helps to ensure
 			that somehow the constants aren't different, resulting in different motor actions.
 
 
 - BoxBegin
-		- probably don't need current limits for either shooter or intake.  Suggest removing
-		- The sensor type for the built in is "hall..." not encoder.  (Encoder 
+		X probably don't need current limits for either shooter or intake.  Suggest removing
+		X The sensor type for the built in is "hall..." not encoder.  (Encoder 
 			is for an externally attached encoder.
-		- suggest setting rate limit for shooter.  maybe 0.1 seconds to full speed.
+		X suggest setting rate limit for shooter.  maybe 0.1 seconds to full speed.
 			this will limit the current draw and help battery
-		- suggest setting rate limit for intake.  maybe 0.1 seconds to full speed.
+		X suggest setting rate limit for intake.  maybe 0.1 seconds to full speed.
 			this will limit the current draw and help battery
-		- for intake the current gear ratio is 36:1.  Suggest setting the sensor scaling 1/36
+		X for intake the current gear ratio is 36:1.  Suggest setting the sensor scaling 1/36
 			so we can measure RPM of the intake wheels.  If you want the units to be
 			rev/seconds then multiply by 1/60....
 
-- Arm2Exec
-		- When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
-			to ensure that there isn't a strange bounce process the raw limit switch value with
-			"on delay" then to an "edge on" then to the case statement that sets the position to
-			top value. 
-		- When hitting the bottom limit switch, suggest setting the position to bottom value.  Suggest that 
-			to ensure that there isn't a strange bounce process the raw limit switch value with
-			"on delay" then to an "edge on" then to the case statement that sets the position to
-			bottom value. 
-		- set "first time" setpoint equal to position so it doesnt move.
-		- feed this setpoint and the position that is read from motor controller to the position control.
-		- write the result to the motor.
-		X the position control has inputs for the limit switches too.
-		X dont need to feed time to the write network table variables..  Okayyyyyy
-
 
 - BoxExec
-		- for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
+		- suggest writing filtered speed to network table variables.
+		- check the permissive for issuing the shooting command - Do you want state = Have Note?
+		- "used note" - do you want the sensor detection to be on or off (I'm thinking off).  Also
+			you might want to add an Off Delay here.  The intake sensor is pretty far from
+			the intake and the speed is slower.
+		- start shoot - should shoot wheel setpoint be zero?  It is really okay since the next
+			state sets the speed demand.
+		- the "Set" functions are really "Get" functions.  They are getting the global variable values
+			for others to use.  Suggest renaming.
+		X for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
 			this helps arbitrate among commands.  Could just use individual bool cmd and process
 			in state machine.  (works the same.)
-		- dont need to feed time to the write network table variables..
+		X dont need to feed time to the write network table variables..
+		# Just a note -- after invert of digital inputs, sensors mean
+				intake	shooter
+				-----	------
+				False	False	No note
+				False	True	Have note (note in shooter wheels)
+				True	False	Have note (ready to shoot)
+				True	True	Have note (mis-aligned)
 
-X ArmBegin2	X  Suggest naming this Arm2Begin 
+
+X ArmBegin2	
+		- Set the starting angle
+		- Set the primary current limit to 40 Amps
+		X  Suggest naming this Arm2Begin 
 		X  The NEO is a "brushless" motor.
 		X  Use "set limit switch config" for "forward" switch.  
 		   	X Set to enabled to TRUE.
@@ -69,10 +79,29 @@ X ArmBegin2	X  Suggest naming this Arm2Begin
 		X set a value for initial position.  Put a note that this needs to be
 			set.
 
-X sArmExecute2	X Suggest renaming this to Arm2Execute...
+
+- Arm2Exec
+		- when hitting the reverse limit switch set the actual angle.  Right now it is zero.
+		- when hitting the upper limit switch, add code to set the sensor angle.  Right now it it zero.
+		- When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
+			to ensure that there isn't a strange bounce process the raw limit switch value with
+			"on delay" then to an "edge on" then to the case statement that sets the position to
+			top value. 
+		- When hitting the bottom limit switch, suggest setting the position to bottom value.  Suggest that 
+			to ensure that there isn't a strange bounce process the raw limit switch value with
+			"on delay" then to an "edge on" then to the case statement that sets the position to
+			bottom value. 
+		- set "first time" setpoint equal to position so it doesnt move.
+		- feed this setpoint and the position that is read from motor controller to the position control.
+		- write the result to the motor.
+		X the position control has inputs for the limit switches too.
+		X dont need to feed time to the write network table variables..  Okayyyyyy
+  		X Suggest renaming this to Arm2Execute...
 		X This will be position control.  The math library now has a position
 			control routine.
 		X Read the sensors first ( position, velocity, forward and reverse limit switches )
 		X write these to network tables.
 		X use position control to set motor output.  We can discuss tuning.
+
+
 
