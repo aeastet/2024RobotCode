@@ -11,10 +11,10 @@
 # Executables
 *.exe
 *.rtexe
-**\Builds\**
-**\builds\**
-\builds\**
-\builds\*
+**/Builds/**
+**/builds/**
+/builds/**
+/builds/*
 
 # Metadata
 *.aliases
