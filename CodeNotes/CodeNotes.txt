@@ -104,4 +104,35 @@ X ArmBegin2
 		X use position control to set motor output.  We can discuss tuning.
 
 
+- Human Execute
+		- Determine what driving modes are needed.  For example:
+			0 - Normal Swerve Drive
+			1 - Go to amp
+			2 - Go to speaker
+			3 - Go to source
+			4.... - whatever ......
+		- create code to determine the mode number
+		- modify the drive "human action cache" (suggest renaming) to do
+			driving for each mode.
+
+		- add code for 2nd controller
+
+		- add code for 3rd controller (button box)
+
+		- add climb commands
+
+		- add arm commands
+
+		- add box commmands
+
+		- suggest removing the drive modifier -- it doesn't do anything anyway.
+			if you want a slow mode add code for that.  suggest using a
+			set-reset flip flop to store the value. Write value to network
+			tables.  Add the value as an input to "human action cache"
+			and multiply the mode 0 with the slow mode factor as appropriate.
+			(Suggest not using this to modify other modes...)
+
+
+
+
 
