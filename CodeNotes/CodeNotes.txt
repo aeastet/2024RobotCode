@@ -2,7 +2,7 @@
 VI		Notes
 
 - ClimbBegin
-		- Suggest setting the smart current limit to TRUE.  Currently this is an unwired input to this VI.
+		X Suggest setting the smart current limit to TRUE.  Currently this is an unwired input to this VI.
 			It defaults to FALSE.
 		X I didn't look, but ensure that there are current limits.  Ask build and electrical to
 			tell us what the current limits should be.
@@ -10,7 +10,7 @@ VI		Notes
 		
 
 - ClimbExec
-		- Climb is not rotational like the arm.  Do NOT use COSINE to compensate for the weight being lifted.
+		X Climb is not rotational like the arm.  Do NOT use COSINE to compensate for the weight being lifted.
 		If the motor is pulling down (output is negative), leave alone.  If output is pushing up (output is
 		positive) multiply the output by a constant fractional number -- say 0.3.  
 		X do you want separate demands for left and right ??  You could use one demand for both.
