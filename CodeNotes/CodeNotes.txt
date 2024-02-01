@@ -14,12 +14,12 @@ VI		Notes
 		If the motor is pulling down (output is negative), leave alone.  If output is pushing up (output is
 		positive) multiply the output by a constant fractional number -- say 0.3.  
 		X do you want separate demands for left and right ??  You could use one demand for both.
-		- create a virtual forward limit switch.  This would be true if height is >= some constant.
+		X create a virtual forward limit switch.  This would be true if height is >= some constant.
 		- When hitting the bottom limit switch, suggest setting the position to 0.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			zero. 
-		- It would be best to use the same set of tuning constants for left and right (this helps to ensure
+		X It would be best to use the same set of tuning constants for left and right (this helps to ensure
 			that somehow the constants aren't different, resulting in different motor actions.
 
 
@@ -37,14 +37,14 @@ VI		Notes
 
 
 - BoxExec
-		- suggest writing filtered speed to network table variables.
-		- check the permissive for issuing the shooting command - Do you want state = Have Note?
-		- "used note" - do you want the sensor detection to be on or off (I'm thinking off).  Also
+		X suggest writing filtered speed to network table variables.
+		X check the permissive for issuing the shooting command - Do you want state = Have Note?
+		X "used note" - do you want the sensor detection to be on or off (I'm thinking off).  Also
 			you might want to add an Off Delay here.  The intake sensor is pretty far from
 			the intake and the speed is slower.
-		- start shoot - should shoot wheel setpoint be zero?  It is really okay since the next
+		X start shoot - should shoot wheel setpoint be zero?  It is really okay since the next
 			state sets the speed demand.
-		- the "Set" functions are really "Get" functions.  They are getting the global variable values
+		X the "Set" functions are really "Get" functions.  They are getting the global variable values
 			for others to use.  Suggest renaming.
 		X for commands, suggest using "bool cmd mux array"  under General digital -> bool cmd.
 			this helps arbitrate among commands.  Could just use individual bool cmd and process
@@ -59,9 +59,9 @@ VI		Notes
 				True	True	Have note (mis-aligned)
 
 
-X ArmBegin2	
+- ArmBegin2	
 		- Set the starting angle
-		- Set the primary current limit to 40 Amps
+		X Set the primary current limit to 40 Amps
 		X  Suggest naming this Arm2Begin 
 		X  The NEO is a "brushless" motor.
 		X  Use "set limit switch config" for "forward" switch.  
@@ -81,7 +81,7 @@ X ArmBegin2
 
 
 - Arm2Exec
-		- when hitting the reverse limit switch set the actual angle.  Right now it is zero.
+		X when hitting the reverse limit switch set the actual angle.  Right now it is zero.
 		- when hitting the upper limit switch, add code to set the sensor angle.  Right now it it zero.
 		- When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
@@ -91,7 +91,7 @@ X ArmBegin2
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			bottom value. 
-		- set "first time" setpoint equal to position so it doesnt move.
+		X set "first time" setpoint equal to position so it doesnt move.
 		- feed this setpoint and the position that is read from motor controller to the position control.
 		- write the result to the motor.
 		X the position control has inputs for the limit switches too.
