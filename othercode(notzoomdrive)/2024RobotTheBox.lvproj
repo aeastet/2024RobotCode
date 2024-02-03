@@ -733,16 +733,11 @@ AddOutputFilter chunkFilter
 				<Item Name="XBox Buttons Indexer.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/XBox Buttons Indexer.ctl"/>
 			</Item>
 			<Item Name="ArmGamePiecePreset.ctl" Type="VI" URL="../Arm/ArmGamePiecePreset.ctl"/>
-			<Item Name="ArmGetLEOnTarget.vi" Type="VI" URL="../Arm/ArmGetLEOnTarget.vi"/>
 			<Item Name="ArmGetPresets.vi" Type="VI" URL="../Arm/ArmGetPresets.vi"/>
-			<Item Name="ArmIncrementLE.vi" Type="VI" URL="../Arm/ArmIncrementLE.vi"/>
 			<Item Name="ArmLiftConstants.vi" Type="VI" URL="../Arm/ArmLiftConstants.vi"/>
 			<Item Name="ArmPositionPreset.ctl" Type="VI" URL="../Arm/ArmPositionPreset.ctl"/>
-			<Item Name="ArmSetLEDemand.vi" Type="VI" URL="../Arm/ArmSetLEDemand.vi"/>
 			<Item Name="ArmSetXZDemand.vi" Type="VI" URL="../Arm/ArmSetXZDemand.vi"/>
-			<Item Name="ClawGlobal.vi" Type="VI" URL="../Claw/ClawGlobal.vi"/>
-			<Item Name="ClawSetDmd.vi" Type="VI" URL="../Claw/ClawSetDmd.vi"/>
-			<Item Name="ClawSetOpenClose.vi" Type="VI" URL="../Claw/ClawSetOpenClose.vi"/>
+			<Item Name="AutoSetLEDemands.vi" Type="VI" URL="../Autonomous/AutoSetLEDemands.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -786,7 +781,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
