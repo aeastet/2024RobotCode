@@ -124,6 +124,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Team Code" Type="Folder">
+			<Item Name="AllianceColorGet.vi" Type="VI" URL="../AllianceColorGet.vi"/>
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
@@ -143,6 +144,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Vision" Type="Folder" URL="../Vision">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="AllianceColorGlobal.vi" Type="VI" URL="../AllianceColorGlobal.vi"/>
+		<Item Name="HumanTrajPositions.vi" Type="VI" URL="../HumanTrajPositions.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
