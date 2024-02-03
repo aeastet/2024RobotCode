@@ -15,7 +15,7 @@ VI		Notes
 		positive) multiply the output by a constant fractional number -- say 0.3.  
 		X do you want separate demands for left and right ??  You could use one demand for both.
 		X create a virtual forward limit switch.  This would be true if height is >= some constant.
-		- When hitting the bottom limit switch, suggest setting the position to 0.  Suggest that 
+		X When hitting the bottom limit switch, suggest setting the position to 0.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			zero. 
@@ -60,7 +60,7 @@ VI		Notes
 
 
 - ArmBegin2	
-		- Set the starting angle
+		X Set the starting angle
 		X Set the primary current limit to 40 Amps
 		X  Suggest naming this Arm2Begin 
 		X  The NEO is a "brushless" motor.
@@ -82,17 +82,17 @@ VI		Notes
 
 - Arm2Exec
 		X when hitting the reverse limit switch set the actual angle.  Right now it is zero.
-		- when hitting the upper limit switch, add code to set the sensor angle.  Right now it it zero.
-		- When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
+		X when hitting the upper limit switch, add code to set the sensor angle.  Right now it it zero.
+		X When hitting the top limit switch, suggest setting the position to top value.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			top value. 
-		- When hitting the bottom limit switch, suggest setting the position to bottom value.  Suggest that 
+		n/a When hitting the bottom limit switch, suggest setting the position to bottom value.  Suggest that 
 			to ensure that there isn't a strange bounce process the raw limit switch value with
 			"on delay" then to an "edge on" then to the case statement that sets the position to
 			bottom value. 
 		X set "first time" setpoint equal to position so it doesnt move.
-		- feed this setpoint and the position that is read from motor controller to the position control.
+		X feed this setpoint and the position that is read from motor controller to the position control.
 		- write the result to the motor.
 		X the position control has inputs for the limit switches too.
 		X dont need to feed time to the write network table variables..  Okayyyyyy
