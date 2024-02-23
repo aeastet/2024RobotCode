@@ -1,6 +1,83 @@
 
 VI		Notes
 
+
+========================================================================================================
+OPEN ITEMS
+========================================================================================================
+- Box Execute
+		- add test for shooter setpoint = 0, take this through an ON EDGE.  Put this into PID RESET input
+		- Use global time function for PIDs and timer functions (cpu efficiency)
+		- Only get device refs once, then remember them (cpu efficiency)
+		- Did we implement a new command to "fix note" position.  This would be useful at the beginning of Auto.
+
+- Vision Execute
+		- remove diagram disable structure around vision execute in "Periodic Tasks"
+		- Update vision execute with camera location and camera stream names.
+		- In periodic tasks, never stop the loop that reads the alliance information.   This will allow for easier testing.
+		- In periodic tasks, slow the read alliance information loop to every 3 seconds.  This seems fast enough...
+		- In periodic tasks, when the alliance information changes, write this to network tables.
+		- Only create configuration once, then remember (cpu efficiency)
+- Vision
+		- ensure we are using GameStart in both teleop and auto....to release Pose Estimator...
+			One way to use game start is to check for a change in initial position.  It is changes create then pulse
+			game start false.  On Edge then NOT....   If this is done, then remove GameStart global, setter and getter and references.
+
+- Alliance Color Global
+		- move to a system folder (human, or auto, or vision)... suggest vision...
+		
+- Human Traj Position 
+		- Move to a system folder - human.
+		- Set desired positions -- in FEET, FEET, DEGREES.   Can use the Swerve Odometry example to find these...
+		- output of Trajectory routine is M, M, RAD/SEC,  CONVERT for use as input to DriveSetSpeed.
+
+- TrajectoryCreationRelativeSwerve.
+		- This looks okay.  
+		- Make a version that only has 2 waypoints instead of 4.
+		- Make a version for left of speaker
+		- Make a version for right of speaker.
+
+- TrajectoryExecuteAbsolute
+		- Convert drive max accel to M/S^2	
+
+- TrajectoryExecuteRelative.
+		- Use DriveGetGyroZ instead of external parameter.   Make rotation from degrees not radians.
+		- Where drive max speed is used, convert to M/S
+		- Convert drive max accel to M/S^2
+
+
+- Auto Global
+		- remove items from previous year.
+
+- AutoSetPreSetPos.VI
+		- remove and delete.  From previous year.
+
+- AutoGoHomevi
+		- remove and delete.  From previous year.
+
+- AutoSetXZ.vi
+		- remove and delete.  From previous year.	
+
+- Math Lib (For Jim)
+		- Swerve Pose Est - default Game Start to TRUE.
+
+- 2 Piece Auto
+		- At the very beginning, issue "fix note alignment" command, then issue wait for box ready, then rest of existing code.
+
+
+- ArmExecute
+		- Only get device refs once, then remember them (cpu efficiency)
+		- Remove get sensor velocity (Can bus efficiency)				
+
+- ClimbExecute
+		- Only get device refs once, then remember them (cpu efficiency)
+		- Remove get sensor velocity (Can bus efficiency)				
+
+========================================================================================================
+CLOSED ITEMS
+========================================================================================================
+		- 
+
 - ClimbBegin
 		X Suggest setting the smart current limit to TRUE.  Currently this is an unwired input to this VI.
 			It defaults to FALSE.
@@ -105,25 +182,25 @@ VI		Notes
 
 
 - Human Execute
-		- Determine what driving modes are needed.  For example:
+		X Determine what driving modes are needed.  For example:
 			0 - Normal Swerve Drive
 			1 - Go to amp
 			2 - Go to speaker
 			3 - Go to source
 			4.... - whatever ......
-		- create code to determine the mode number
+		X create code to determine the mode number
 		- modify the drive "human action cache" (suggest renaming) to do
 			driving for each mode.
 
-		- add code for 2nd controller
+		X add code for 2nd controller
 
 		- add code for 3rd controller (button box)
 
-		- add climb commands
+		X add climb commands
 
-		- add arm commands
+		X add arm commands
 
-		- add box commmands
+		X add box commmands
 
 		- suggest removing the drive modifier -- it doesn't do anything anyway.
 			if you want a slow mode add code for that.  suggest using a
