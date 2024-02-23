@@ -1,62 +1,88 @@
 
 VI		Notes
 
+========================================================================================================
+MYA FRIDAY SUGGESTIONS
+========================================================================================================
+- Climb Begin
+	- undo fix that increased the top number of the radius from 6 to 7.63.   This was the wrong way.
+		(the climbing arms went up a shorter distance....)  The radius is really smaller than
+		what we have.... SO   calculate 11/13.8 and multiply the top number of the radius (6) by
+		this value.   This should allow the climber to reach higher...   I get 0.797 x 6 = 4.782.
+
+- Climb Execute
+	- Remove the code that reads the left and right "sensor velocity" and writes these to network
+		table variables.  We don't use this velocity value.  Removing this will lessen our
+		CAN bus utilization which is pretty high.
+
+- Arm2 Execute
+	- Remove the code that reads the arm "sensor velocity" and writes this to a network
+		table variable.  We don't use this velocity value.  Removing this will lessen our
+		CAN bus utilization which is pretty high.
+
+- Auto Global
+		- remove items from previous year.   When opening, select "ignore all".   Items are:
+			QuickAutoPosition, and QuickAutoGamePiece
+
+- AutoSetPreSetPos.VI
+		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
+
+- AutoGoHomevi
+		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
+
+- AutoSetXZ.vi
+		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
+
+- Human Network
+		- Look at Human/ServiceMode, Human/ServiceRotate, Human/ServiceLift, Human/ServiceExtend.  If these
+		are from previous year delete.  Also delete the global variables from Human Global
+
+- PeriodicTasks
+		- When alliance color changes, write it to network tables as a string. (Red, Blue, Invalid).  So
+		we can see that this works.
+
+
 
 ========================================================================================================
 OPEN ITEMS
 ========================================================================================================
+
+PRIORITIES...
+	1) - ENSURE DRIVERS ARE HAPPY WITH EXISTING STRAIGHT 2 PIECE AUTO.
+	2) - TEST GO TO POSITION BUTTONS
+	3) - ADD / TEST, BOX NOTE ALIGNMENT COMMAND, ENSURE IT IS AT THE BEGINNING OF ALL AUTO.
+	3) - CREATE SIDE 2 PIECE AUTO.
+	4) - EFFICIENCY MEM/CPU/CAN ITEMS.
+	5) - FINISH DASHBOARD.
+	6) - REPLACE ABSOLUTE TRAJECTORY BUTTONS WITH OBSTACLE AVOIDANCE TRAJECTORY.
+	(TEAM SHOULD REVIEW AND PRIORITIZE)
+
+- Dashboard
+	- add robot initial orientation setter
+	- add robot gyro calibration setter
+
 - Box Execute
-		- add test for shooter setpoint = 0, take this through an ON EDGE.  Put this into PID RESET input
 		- Use global time function for PIDs and timer functions (cpu efficiency)
 		- Only get device refs once, then remember them (cpu efficiency)
 		- Did we implement a new command to "fix note" position.  This would be useful at the beginning of Auto.
+			(I couldn't find it.  Maybe it wasn't pushed - meaning it is likely lost and needs to be re-done.)
 
 - Vision Execute
-		- remove diagram disable structure around vision execute in "Periodic Tasks"
-		- Update vision execute with camera location and camera stream names.
-		- In periodic tasks, never stop the loop that reads the alliance information.   This will allow for easier testing.
-		- In periodic tasks, slow the read alliance information loop to every 3 seconds.  This seems fast enough...
-		- In periodic tasks, when the alliance information changes, write this to network tables.
 		- Only create configuration once, then remember (cpu efficiency)
-- Vision
-		- ensure we are using GameStart in both teleop and auto....to release Pose Estimator...
-			One way to use game start is to check for a change in initial position.  It is changes create then pulse
-			game start false.  On Edge then NOT....   If this is done, then remove GameStart global, setter and getter and references.
 
-- Alliance Color Global
-		- move to a system folder (human, or auto, or vision)... suggest vision...
 		
-- Human Traj Position 
-		- Move to a system folder - human.
-		- Set desired positions -- in FEET, FEET, DEGREES.   Can use the Swerve Odometry example to find these...
-		- output of Trajectory routine is M, M, RAD/SEC,  CONVERT for use as input to DriveSetSpeed.
-
 - TrajectoryCreationRelativeSwerve.
 		- This looks okay.  
 		- Make a version that only has 2 waypoints instead of 4.
 		- Make a version for left of speaker
 		- Make a version for right of speaker.
 
-- TrajectoryExecuteAbsolute
-		- Convert drive max accel to M/S^2	
 
 - TrajectoryExecuteRelative.
 		- Use DriveGetGyroZ instead of external parameter.   Make rotation from degrees not radians.
 		- Where drive max speed is used, convert to M/S
 		- Convert drive max accel to M/S^2
 
-
-- Auto Global
-		- remove items from previous year.
-
-- AutoSetPreSetPos.VI
-		- remove and delete.  From previous year.
-
-- AutoGoHomevi
-		- remove and delete.  From previous year.
-
-- AutoSetXZ.vi
-		- remove and delete.  From previous year.	
 
 - Math Lib (For Jim)
 		- Swerve Pose Est - default Game Start to TRUE.
@@ -67,11 +93,9 @@ OPEN ITEMS
 
 - ArmExecute
 		- Only get device refs once, then remember them (cpu efficiency)
-		- Remove get sensor velocity (Can bus efficiency)				
 
 - ClimbExecute
 		- Only get device refs once, then remember them (cpu efficiency)
-		- Remove get sensor velocity (Can bus efficiency)				
 
 ========================================================================================================
 CLOSED ITEMS
@@ -113,7 +137,8 @@ CLOSED ITEMS
 			rev/seconds then multiply by 1/60....
 
 
-- BoxExec
+- Box Execute
+		X add test for shooter setpoint = 0, take this through an ON EDGE.  Put this into PID RESET input
 		X suggest writing filtered speed to network table variables.
 		X check the permissive for issuing the shooting command - Do you want state = Have Note?
 		X "used note" - do you want the sensor detection to be on or off (I'm thinking off).  Also
@@ -209,7 +234,19 @@ CLOSED ITEMS
 			and multiply the mode 0 with the slow mode factor as appropriate.
 			(Suggest not using this to modify other modes...)
 
+- Human Traj Position 
+		X Move to a system folder - human.
+		X Set desired positions -- in FEET, FEET, DEGREES.   Can use the Swerve Odometry example to find these...
+		X output of Trajectory routine is M, M, RAD/SEC,  CONVERT for use as input to DriveSetSpeed.
+
+- Vision Execute
+		X remove diagram disable structure around vision execute in "Periodic Tasks"
+		X Update vision execute with camera location and camera stream names.
+		X In periodic tasks, never stop the loop that reads the alliance information.   This will allow for easier testing.
+		X In periodic tasks, slow the read alliance information loop to every 3 seconds.  This seems fast enough...
 
 
+- Alliance Color Global
+		X move to a system folder (human, or auto, or vision)... suggest vision...
 
 
