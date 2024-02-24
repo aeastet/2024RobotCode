@@ -33,11 +33,11 @@ X AutoGoHomevi
 X AutoSetXZ.vi
 		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
 
-- Human Network
+X Human Network
 		- Look at Human/ServiceMode, Human/ServiceRotate, Human/ServiceLift, Human/ServiceExtend.  If these
 		are from previous year delete.  Also delete the global variables from Human Global
 
-- PeriodicTasks
+X PeriodicTasks
 		- When alliance color changes, write it to network tables as a string. (Red, Blue, Invalid).  So
 		we can see that this works.
 
@@ -56,6 +56,7 @@ PRIORITIES...
 	5) - FINISH DASHBOARD.
 	6) - REPLACE ABSOLUTE TRAJECTORY BUTTONS WITH OBSTACLE AVOIDANCE TRAJECTORY.
 	(TEAM SHOULD REVIEW AND PRIORITIZE)
+	7) - Set a shooter speed thats lower for final trap shoot
 
 - Dashboard
 	- add robot initial orientation setter
