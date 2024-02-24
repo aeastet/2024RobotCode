@@ -4,33 +4,33 @@ VI		Notes
 ========================================================================================================
 MYA FRIDAY SUGGESTIONS
 ========================================================================================================
-- Climb Begin
+X Climb Begin
 	- undo fix that increased the top number of the radius from 6 to 7.63.   This was the wrong way.
 		(the climbing arms went up a shorter distance....)  The radius is really smaller than
 		what we have.... SO   calculate 11/13.8 and multiply the top number of the radius (6) by
 		this value.   This should allow the climber to reach higher...   I get 0.797 x 6 = 4.782.
 
-- Climb Execute
+X Climb Execute
 	- Remove the code that reads the left and right "sensor velocity" and writes these to network
 		table variables.  We don't use this velocity value.  Removing this will lessen our
 		CAN bus utilization which is pretty high.
 
-- Arm2 Execute
+X Arm2 Execute
 	- Remove the code that reads the arm "sensor velocity" and writes this to a network
 		table variable.  We don't use this velocity value.  Removing this will lessen our
 		CAN bus utilization which is pretty high.
 
-- Auto Global
+X Auto Global
 		- remove items from previous year.   When opening, select "ignore all".   Items are:
 			QuickAutoPosition, and QuickAutoGamePiece
 
-- AutoSetPreSetPos.VI
+X AutoSetPreSetPos.VI
 		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
 
-- AutoGoHomevi
+X AutoGoHomevi
 		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
 
-- AutoSetXZ.vi
+X AutoSetXZ.vi
 		- highlight VI, select explore, Delete this VI file.  It is from the previous year.
 
 - Human Network

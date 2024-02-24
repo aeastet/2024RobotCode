@@ -736,12 +736,6 @@ AddOutputFilter chunkFilter
 				<Item Name="XBox Axes Indexer.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/XBox Axes Indexer.ctl"/>
 				<Item Name="XBox Buttons Indexer.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/XBox Buttons Indexer.ctl"/>
 			</Item>
-			<Item Name="ArmGamePiecePreset.ctl" Type="VI" URL="../Arm/ArmGamePiecePreset.ctl"/>
-			<Item Name="ArmGetPresets.vi" Type="VI" URL="../Arm/ArmGetPresets.vi"/>
-			<Item Name="ArmLiftConstants.vi" Type="VI" URL="../Arm/ArmLiftConstants.vi"/>
-			<Item Name="ArmPositionPreset.ctl" Type="VI" URL="../Arm/ArmPositionPreset.ctl"/>
-			<Item Name="ArmSetXZDemand.vi" Type="VI" URL="../Arm/ArmSetXZDemand.vi"/>
-			<Item Name="AutoSetLEDemands.vi" Type="VI" URL="../Autonomous/AutoSetLEDemands.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
