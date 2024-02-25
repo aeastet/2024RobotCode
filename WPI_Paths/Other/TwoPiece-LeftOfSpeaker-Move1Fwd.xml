@@ -20,11 +20,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>15.88303197199533</Val>
+<Val>15.82541516919487</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.53357002341920</Val>
+<Val>6.62993536299766</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -32,7 +32,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>2.00000000000000</Val>
+<Val>1.50000000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -40,11 +40,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>14.03929428238040</Val>
+<Val>13.77041586931155</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.86121217798595</Val>
+<Val>6.97685058548009</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -52,7 +52,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>3.00000000000000</Val>
+<Val>3.50000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
@@ -81,7 +81,7 @@
 </Boolean>
 <Boolean>
 <Name>DiffDrKineConstntDefined</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 <Boolean>
 <Name>CentAcellConstntDefined</Name>
@@ -96,14 +96,14 @@
 <NumElts>3</NumElts>
 <DBL>
 <Name>Max Speed (M/S)</Name>
-<Val>1.52400000000000</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <Cluster>
 <Name>DIFF_DRIVE_KINEMATICS</Name>
 <NumElts>1</NumElts>
 <DBL>
 <Name>TrackWidth_Meters</Name>
-<Val>0.58420000000000</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 </Cluster>
 <DBL>
@@ -778,18 +778,18 @@
 </String>
 <Boolean>
 <Name>Rect Region Exists</Name>
-<Val>0</Val>
+<Val>1</Val>
 </Boolean>
 <Cluster>
 <Name>RectRegionBotLeft</Name>
 <NumElts>2</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>0.00000000000000</Val>
+<Val>13.28420000000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>0.00000000000000</Val>
+<Val>6.50240000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -797,16 +797,16 @@
 <NumElts>2</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>0.00000000000000</Val>
+<Val>14.63040000000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>0.00000000000000</Val>
+<Val>7.34060000000000</Val>
 </DBL>
 </Cluster>
 <DBL>
 <Name>Rect Region Max Speed</Name>
-<Val>3.00000000000000</Val>
+<Val>0.30480000000000</Val>
 </DBL>
 </Cluster>
 </LVData>
