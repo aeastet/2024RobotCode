@@ -10,17 +10,17 @@ PRIORITIES...
 	1) X ENSURE DRIVERS ARE HAPPY WITH EXISTING STRAIGHT 2 PIECE AUTO.   DONE
 	2) - TEST GO TO POSITION BUTTONS				     DONE - needs camera and traj tuning,
 											speaker orientation backwards.
-	3) - ADD / TEST, BOX NOTE ALIGNMENT COMMAND, ENSURE IT IS AT THE BEGINNING OF ALL AUTO.
-	4) - CREATE SIDE 2 PIECE AUTO.
-	5) - Set a shooter speed thats lower for final trap shoot
+	3) X ADD / TEST, BOX NOTE ALIGNMENT COMMAND, ENSURE IT IS AT THE BEGINNING OF ALL AUTO.
+	4) X CREATE SIDE 2 PIECE AUTO.
+	5) X Set a shooter speed thats lower for final trap shoot (Not Needed)
 	6) - EFFICIENCY MEM/CPU/CAN ITEMS.
-	7) - FINISH DASHBOARD.
+	7) X FINISH DASHBOARD.
 	8) - REPLACE ABSOLUTE TRAJECTORY BUTTONS WITH OBSTACLE AVOIDANCE TRAJECTORY.
 	(TEAM SHOULD REVIEW AND PRIORITIZE)
 
 - Dashboard
-	- add robot initial orientation setter
-	- add robot gyro calibration setter
+	X add robot initial orientation setter
+	X add robot gyro calibration setter
 
 - Box Execute
 		- Use global time function for PIDs and timer functions (cpu efficiency)
@@ -46,7 +46,7 @@ PRIORITIES...
 		- Swerve Pose Est - default Game Start to TRUE.
 
 - 2 Piece Auto
-		- At the very beginning, issue "fix note alignment" command, then issue wait for box ready, then rest of existing code.
+		X At the very beginning, issue "fix note alignment" command, then issue wait for box ready, then rest of existing code.
 
 
 - ArmExecute
