@@ -6,7 +6,7 @@
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Shares\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\TwoPiece-Center-MoveCenterLineFwd.xml</Val>
+<Val>C:\Shares\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueTwoPiece-Center-MoveCenterLineFwd.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
@@ -20,7 +20,7 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>15.15110000000000</Val>
+<Val>1.30810000000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
@@ -28,7 +28,7 @@
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
-<Val>3.14159265358979</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
@@ -40,7 +40,7 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>11.46574375729288</Val>
+<Val>5.31995145857643</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
@@ -60,7 +60,7 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>8.64252042007001</Val>
+<Val>7.81667220000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
@@ -68,7 +68,7 @@
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
-<Val>3.14159265358979</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
