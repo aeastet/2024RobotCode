@@ -328,6 +328,13 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="ArmGetSetpointEnum.ctl" Type="VI" URL="../Arm2System/ArmGetSetpointEnum.ctl"/>
+			<Item Name="ArmSetPosition.vi" Type="VI" URL="../Arm2System/ArmSetPosition.vi"/>
+			<Item Name="ClimbGetSensorPoseLeft.vi" Type="VI" URL="../Climb/ClimbGetSensorPoseLeft.vi"/>
+			<Item Name="ClimbGetSensorPoseRight.vi" Type="VI" URL="../Climb/ClimbGetSensorPoseRight.vi"/>
+			<Item Name="ArmGetSetpointValue.vi" Type="VI" URL="../Arm2System/ArmGetSetpointValue.vi"/>
+			<Item Name="ClimbGlobal.vi" Type="VI" URL="../Climb/ClimbGlobal.vi"/>
+			<Item Name="ArmGlobal.vi" Type="VI" URL="../Arm2System/ArmGlobal.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
