@@ -333,8 +333,6 @@
 			<Item Name="ClimbGetSensorPoseLeft.vi" Type="VI" URL="../Climb/ClimbGetSensorPoseLeft.vi"/>
 			<Item Name="ClimbGetSensorPoseRight.vi" Type="VI" URL="../Climb/ClimbGetSensorPoseRight.vi"/>
 			<Item Name="ArmGetSetpointValue.vi" Type="VI" URL="../Arm2System/ArmGetSetpointValue.vi"/>
-			<Item Name="ClimbGlobal.vi" Type="VI" URL="../Climb/ClimbGlobal.vi"/>
-			<Item Name="ArmGlobal.vi" Type="VI" URL="../Arm2System/ArmGlobal.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
