@@ -6,11 +6,11 @@
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Shares\github\2024RobotCode\othercode(notzoomdrive)\Deploy\CenterSpeakerMoveRev2LeftNote.xml</Val>
+<Val>C:\Shares\Github\2024RobotCode\WPI_Paths\Other\TwoPiece-LeftOfSpeaker-Move1Fwd.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
-<Val>from left note to center speaker</Val>
+<Val>2 piece - left of speaker - move 1 - forward</Val>
 </String>
 <Array>
 <Name>WayPoints</Name>
@@ -20,11 +20,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>13.80883700000000</Val>
+<Val>15.82541516919487</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.99612520000000</Val>
+<Val>6.62993536299766</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -40,19 +40,19 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>15.15110000000000</Val>
+<Val>14.07213340000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>5.53135800000000</Val>
+<Val>6.98820040000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
-<Val>3.14159265358979</Val>
+<Val>3.12413936106985</Val>
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>1.50000000000000</Val>
+<Val>3.50000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
@@ -77,7 +77,7 @@
 </DBL>
 <Boolean>
 <Name>Reversed</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 <Boolean>
 <Name>DiffDrKineConstntDefined</Name>
@@ -116,7 +116,7 @@
 <NumElts>1</NumElts>
 <DBL>
 <Name>Max Cent Accel</Name>
-<Val>0.60960000000000</Val>
+<Val>0.50800000000000</Val>
 </DBL>
 </Cluster>
 <Boolean>
@@ -778,18 +778,18 @@
 </String>
 <Boolean>
 <Name>Rect Region Exists</Name>
-<Val>0</Val>
+<Val>1</Val>
 </Boolean>
 <Cluster>
 <Name>RectRegionBotLeft</Name>
 <NumElts>2</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>0.00000000000000</Val>
+<Val>13.28420000000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>0.00000000000000</Val>
+<Val>6.50240000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -797,16 +797,16 @@
 <NumElts>2</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>0.00000000000000</Val>
+<Val>14.63040000000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>0.00000000000000</Val>
+<Val>7.34060000000000</Val>
 </DBL>
 </Cluster>
 <DBL>
 <Name>Rect Region Max Speed</Name>
-<Val>3.00000000000000</Val>
+<Val>0.30480000000000</Val>
 </DBL>
 </Cluster>
 </LVData>

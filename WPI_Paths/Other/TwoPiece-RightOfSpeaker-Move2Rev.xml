@@ -6,11 +6,11 @@
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Shares\github\2024RobotCode\othercode(notzoomdrive)\Deploy\CenterSpeakerMoveRev2LeftNote.xml</Val>
+<Val>C:\Shares\Github\2024RobotCode\WPI_Paths\Other\TwoPiece-RightOfSpeaker-Move2Rev.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
-<Val>from left note to center speaker</Val>
+<Val>2 piece - right of speaker - move 2  - Reverse</Val>
 </String>
 <Array>
 <Name>WayPoints</Name>
@@ -20,31 +20,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>13.80883700000000</Val>
+<Val>14.17373340000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.99612520000000</Val>
-</DBL>
-<DBL>
-<Name>ANGLE</Name>
-<Val>2.09439510239320</Val>
-</DBL>
-<DBL>
-<Name>WEIGHT</Name>
-<Val>1.50000000000000</Val>
-</DBL>
-</Cluster>
-<Cluster>
-<Name>UTIL_WEIGHTED_WAYPOINT</Name>
-<NumElts>4</NumElts>
-<DBL>
-<Name>X</Name>
-<Val>15.15110000000000</Val>
-</DBL>
-<DBL>
-<Name>Y</Name>
-<Val>5.53135800000000</Val>
+<Val>3.73700040000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -52,7 +32,27 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>1.50000000000000</Val>
+<Val>3.00000000000000</Val>
+</DBL>
+</Cluster>
+<Cluster>
+<Name>UTIL_WEIGHTED_WAYPOINT</Name>
+<NumElts>4</NumElts>
+<DBL>
+<Name>X</Name>
+<Val>15.83842400000000</Val>
+</DBL>
+<DBL>
+<Name>Y</Name>
+<Val>4.17669980000000</Val>
+</DBL>
+<DBL>
+<Name>ANGLE</Name>
+<Val>-2.09439510239320</Val>
+</DBL>
+<DBL>
+<Name>WEIGHT</Name>
+<Val>1.20000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
