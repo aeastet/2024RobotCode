@@ -1,12 +1,12 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
-<Version>23.3.2f2</Version>
+<Version>23.3f0</Version>
 <Cluster>
 <Name>TrajCreateConfig V5</Name>
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Shares\github\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueCenterSpeakerMoveRev2LeftNote.xml</Val>
+<Val>C:\Users\mitch\Documents\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueCenterSpeakerMoveRev2LeftNote.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
@@ -20,11 +20,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>2.74640040000000</Val>
+<Val>2.65036300000000</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.74557960000000</Val>
+<Val>6.99383920000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -32,7 +32,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>3.00000000000000</Val>
+<Val>1.50000000000000</Val>
 </DBL>
 </Cluster>
 <Cluster>
@@ -44,7 +44,7 @@
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>5.49282620000000</Val>
+<Val>5.53135800000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -52,7 +52,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>2.00000000000000</Val>
+<Val>1.50000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
@@ -61,11 +61,11 @@
 <NumElts>15</NumElts>
 <DBL>
 <Name>MaxVelocity</Name>
-<Val>1.52400000000000</Val>
+<Val>2.54000000000000</Val>
 </DBL>
 <DBL>
 <Name>Max Acceleration</Name>
-<Val>0.63500000000000</Val>
+<Val>0.91440000000000</Val>
 </DBL>
 <DBL>
 <Name>StartVelocity</Name>
@@ -128,7 +128,7 @@
 <NumElts>2</NumElts>
 <DBL>
 <Name>Max Speed (M/S)</Name>
-<Val>1.52400000000000</Val>
+<Val>2.54000000000000</Val>
 </DBL>
 <Cluster>
 <Name>SwerveKinematics</Name>
