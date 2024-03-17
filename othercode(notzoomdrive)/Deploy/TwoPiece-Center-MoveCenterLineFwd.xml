@@ -44,7 +44,7 @@
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.51429695550351</Val>
+<Val>6.56508720000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -64,7 +64,7 @@
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>5.78192037470726</Val>
+<Val>5.70572900000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -72,7 +72,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>2.00000000000000</Val>
+<Val>2.60000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
@@ -81,11 +81,11 @@
 <NumElts>15</NumElts>
 <DBL>
 <Name>MaxVelocity</Name>
-<Val>1.52400000000000</Val>
+<Val>2.54000000000000</Val>
 </DBL>
 <DBL>
 <Name>Max Acceleration</Name>
-<Val>0.63500000000000</Val>
+<Val>0.91440000000000</Val>
 </DBL>
 <DBL>
 <Name>StartVelocity</Name>
@@ -148,7 +148,7 @@
 <NumElts>2</NumElts>
 <DBL>
 <Name>Max Speed (M/S)</Name>
-<Val>1.52400000000000</Val>
+<Val>2.54000000000000</Val>
 </DBL>
 <Cluster>
 <Name>SwerveKinematics</Name>
