@@ -1,12 +1,12 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
-<Version>23.3.2f2</Version>
+<Version>23.3f0</Version>
 <Cluster>
 <Name>TrajCreateConfig V5</Name>
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Shares\github\f2024RobotCode\othercode(notzoomdrive)\Deploy\BlueTwoPiece-RightOfSpeaker-Move2Rev.xml</Val>
+<Val>C:\Users\mitch\Documents\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueTwoPiece-RightOfSpeaker-Move2Rev.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
@@ -24,7 +24,7 @@
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>3.53380040000000</Val>
+<Val>3.91480040000000</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
