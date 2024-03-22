@@ -6,7 +6,7 @@
 <NumElts>12</NumElts>
 <Path>
 <Name>Write Config File Name</Name>
-<Val>C:\Users\mitch\Documents\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueCenterSpeakerMoveFwd2LeftNote.xml</Val>
+<Val>C:\Shares\GitHub\2024RobotCode\othercode(notzoomdrive)\Deploy\BlueCenterSpeakerMoveFwd2LeftNote.xml</Val>
 </Path>
 <String>
 <Name>Write Config File Comment</Name>
@@ -40,11 +40,11 @@
 <NumElts>4</NumElts>
 <DBL>
 <Name>X</Name>
-<Val>2.70799560000000</Val>
+<Val>2.76560653442240</Val>
 </DBL>
 <DBL>
 <Name>Y</Name>
-<Val>6.76478200000000</Val>
+<Val>6.74557377049180</Val>
 </DBL>
 <DBL>
 <Name>ANGLE</Name>
@@ -52,7 +52,7 @@
 </DBL>
 <DBL>
 <Name>WEIGHT</Name>
-<Val>1.50000000000000</Val>
+<Val>2.30000000000000</Val>
 </DBL>
 </Cluster>
 </Array>
@@ -276,7 +276,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>-3.92523114670944E-17</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
@@ -284,7 +284,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>3.92523114670944E-17</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
@@ -292,7 +292,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>3.92523114670944E-17</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
@@ -300,7 +300,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>-3.92523114670944E-17</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
@@ -320,7 +320,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>9.84251968503937</Val>
+<Val>9.84251968503936</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
@@ -332,7 +332,7 @@
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
-<Val>9.84251968503937</Val>
+<Val>9.84251968503936</Val>
 </DBL>
 <DBL>
 <Name>Real Matrix Element</Name>
