@@ -156,7 +156,7 @@
 			</Item>
 			<Item Name="DriveGetSwerveKinematics.vi" Type="VI" URL="../Drive/DriveGetSwerveKinematics.vi"/>
 			<Item Name="DriveGlobal.vi" Type="VI" URL="../Drive/DriveGlobal.vi"/>
-			<Item Name="DriveGetModualPositions.vi" Type="VI" URL="../Drive/DriveGetModualPositions.vi"/>
+			<Item Name="DriveGetModulePositions.vi" Type="VI" URL="../Drive/DriveGetModulePositions.vi"/>
 			<Item Name="DriveGetYaw.vi" Type="VI" URL="../Drive/DriveGetYaw.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
@@ -555,6 +555,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NT_LL_Write String.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT_LL_Write String.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
 				<Item Name="PhotonVisionLib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/PhotonVisionLib/PhotonVisionLib.lvlib"/>
+				<Item Name="PIDController_SetIntegratorZone.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/JAS_Junk/TrajLib/VI/PIDController_SetIntegratorZone.vi"/>
 				<Item Name="PWM data proto.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM data proto.ctl"/>
 				<Item Name="PWM proto.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM proto.ctl"/>
 				<Item Name="PWM Update Ops.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/PWM/PWM Update Ops.ctl"/>
