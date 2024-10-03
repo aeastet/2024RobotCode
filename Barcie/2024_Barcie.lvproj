@@ -275,6 +275,9 @@ AddOutputFilter chunkFilter
 		<Item Name="LED" Type="Folder" URL="../LED">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Shoulder" Type="Folder" URL="../Shoulder">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
@@ -289,7 +292,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="TheBox" Type="Folder" URL="../TheBox">
+		<Item Name="Toaster" Type="Folder" URL="../Toaster">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Trajectory" Type="Folder" URL="../Trajectory">
