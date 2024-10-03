@@ -251,9 +251,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Actions" Type="Folder" URL="../Actions">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Arm2" Type="Folder" URL="../Arm2">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="Autonomous" Type="Folder" URL="../Autonomous">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
