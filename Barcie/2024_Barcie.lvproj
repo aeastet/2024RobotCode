@@ -292,7 +292,9 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
-		<Item Name="Toaster" Type="Folder"/>
+		<Item Name="Toaster" Type="Folder" URL="../Toaster">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Trajectory" Type="Folder" URL="../Trajectory">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -941,22 +943,6 @@ AddOutputFilter chunkFilter
 				<Item Name="XBox Axes Indexer.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/XBox Axes Indexer.ctl"/>
 				<Item Name="XBox Buttons Indexer.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Joystick/XBox Buttons Indexer.ctl"/>
 			</Item>
-			<Item Name="EminemAlign.vi" Type="VI" URL="../Toaster/EminemAlign.vi"/>
-			<Item Name="EminemAmp.vi" Type="VI" URL="../Toaster/EminemAmp.vi"/>
-			<Item Name="EminemBegin.vi" Type="VI" URL="../Toaster/EminemBegin.vi"/>
-			<Item Name="EminemCmdCancel.vi" Type="VI" URL="../Toaster/EminemCmdCancel.vi"/>
-			<Item Name="EminemDashRead.vi" Type="VI" URL="../Toaster/EminemDashRead.vi"/>
-			<Item Name="EminemExecute.vi" Type="VI" URL="../Toaster/EminemExecute.vi"/>
-			<Item Name="EminemGetCommandReady.vi" Type="VI" URL="../Toaster/EminemGetCommandReady.vi"/>
-			<Item Name="EminemGetNoteState.vi" Type="VI" URL="../Toaster/EminemGetNoteState.vi"/>
-			<Item Name="EminemGlobals.vi" Type="VI" URL="../Toaster/EminemGlobals.vi"/>
-			<Item Name="EminemIntake.vi" Type="VI" URL="../Toaster/EminemIntake.vi"/>
-			<Item Name="EminemNetworking.vi" Type="VI" URL="../Toaster/EminemNetworking.vi"/>
-			<Item Name="EminemNetworkingGlobal.vi" Type="VI" URL="../Toaster/EminemNetworkingGlobal.vi"/>
-			<Item Name="EminemNoteState.ctl" Type="VI" URL="../Toaster/EminemNoteState.ctl"/>
-			<Item Name="EminemPreRev.vi" Type="VI" URL="../Toaster/EminemPreRev.vi"/>
-			<Item Name="EminemShoot.vi" Type="VI" URL="../Toaster/EminemShoot.vi"/>
-			<Item Name="EminemStatesEnum.ctl" Type="VI" URL="../Toaster/EminemStatesEnum.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
