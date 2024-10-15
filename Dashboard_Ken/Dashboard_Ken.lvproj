@@ -36,12 +36,13 @@
 		<Item Name="Shoulder" Type="Folder" URL="../../Barcie/Shoulder">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
+		<Item Name="Toaster" Type="Folder" URL="../../Barcie/Toaster">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="_unused" Type="Folder" URL="../_unused">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Dashboard Main_Fixed_1280x768.vi" Type="VI" URL="../Dashboard Main_Fixed_1280x768.vi"/>
-		<Item Name="Dashboard Main_Fixed_1366x768.vi" Type="VI" URL="../Dashboard Main_Fixed_1366x768.vi"/>
-		<Item Name="Dashboard Main_Fixed_1600x900.vi" Type="VI" URL="../Dashboard Main_Fixed_1600x900.vi"/>
-		<Item Name="Dashboard Main_Fixed_1920x1080.vi" Type="VI" URL="../Dashboard Main_Fixed_1920x1080.vi"/>
-		<Item Name="2023Dashboard Main_1366_768.vi" Type="VI" URL="../2023Dashboard Main_1366_768.vi"/>
 		<Item Name="Robot_kitbot_4.png" Type="Document" URL="../Robot_kitbot_4.png"/>
 		<Item Name="Robot_kitbot_5.png" Type="Document" URL="../Robot_kitbot_5.png"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -468,6 +469,8 @@
 				<Item Name="WPI_DigitalInputDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputDevRef.ctl"/>
 				<Item Name="WPI_DigitalInputGetValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputGetValue.vi"/>
 				<Item Name="WPI_DigitalInputOpen.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputOpen.vi"/>
+				<Item Name="WPI_DigitalInputRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputRefNum Registry Get.vi"/>
+				<Item Name="WPI_DigitalInputRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputRefNum Registry Set.vi"/>
 				<Item Name="WPI_DigitalInputToDigitalModule.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputToDigitalModule.vi"/>
 				<Item Name="WPI_DigitalModuleDeviceRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalModule/WPI_DigitalModuleDeviceRef.ctl"/>
 				<Item Name="WPI_DigitalModuleDIOAllocator.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalModule/WPI_DigitalModuleDIOAllocator.vi"/>
@@ -605,7 +608,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{85790AC1-B562-48AF-BAD8-2E472A0BA399}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_unused/Dashboard Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -637,7 +640,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5DE62D55-8CE5-4F5C-8358-24D5E8D098D9}</Property>
-				<Property Name="Bld_version.build" Type="Int">34</Property>
+				<Property Name="Bld_version.build" Type="Int">37</Property>
 				<Property Name="Bld_version.major" Type="Int">17</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Dashboard.exe</Property>
@@ -655,7 +658,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{85041A26-758A-4850-96CA-180A276177E4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_unused/Dashboard Main.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Support/Panel Resized.vi</Property>
@@ -717,7 +720,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{83E32119-2A6C-4731-B75E-4831A4B7BEEF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_unused/Dashboard Main.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Support/Panel Resized.vi</Property>
@@ -731,7 +734,7 @@
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1280x768.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1366x768.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/_unused/Dashboard Main_Fixed_1366x768.vi</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">6</Property>
@@ -769,7 +772,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{83E32119-2A6C-4731-B75E-4831A4B7BEEF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_unused/Dashboard Main.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Support/Panel Resized.vi</Property>
@@ -783,10 +786,10 @@
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1280x768.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1366x768.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/_unused/Dashboard Main_Fixed_1366x768.vi</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1600x900.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/_unused/Dashboard Main_Fixed_1600x900.vi</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
@@ -824,7 +827,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{83E32119-2A6C-4731-B75E-4831A4B7BEEF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_unused/Dashboard Main.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Support/Panel Resized.vi</Property>
@@ -838,10 +841,10 @@
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1280x768.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1366x768.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/_unused/Dashboard Main_Fixed_1366x768.vi</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Dashboard Main_Fixed_1600x900.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/_unused/Dashboard Main_Fixed_1600x900.vi</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
