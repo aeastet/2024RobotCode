@@ -33,10 +33,10 @@
 		<Item Name="Shoulder" Type="Folder" URL="../Shoulder">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Toaster" Type="Folder" URL="../Toaster">
+		<Item Name="Human" Type="Folder" URL="../Human">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Human" Type="Folder" URL="../Human">
+		<Item Name="MNM" Type="Folder" URL="../MNM">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -698,6 +698,9 @@ AddOutputFilter chunkFilter
 		<Item Name="LED" Type="Folder" URL="../LED">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="MNM" Type="Folder" URL="../MNM">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Shoulder" Type="Folder" URL="../Shoulder">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -714,9 +717,6 @@ AddOutputFilter chunkFilter
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
-		</Item>
-		<Item Name="Toaster" Type="Folder" URL="../Toaster">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Trajectory" Type="Folder" URL="../Trajectory">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
