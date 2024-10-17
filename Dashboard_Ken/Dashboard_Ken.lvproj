@@ -36,13 +36,13 @@
 		<Item Name="Shoulder" Type="Folder" URL="../../Barcie/Shoulder">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Toaster" Type="Folder" URL="../../Barcie/Toaster">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="_unused" Type="Folder" URL="../_unused">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Human" Type="Folder" URL="../../Barcie/Human">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="MNM" Type="Folder" URL="../../Barcie/MNM">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Dashboard Main_Fixed_1280x768.vi" Type="VI" URL="../Dashboard Main_Fixed_1280x768.vi"/>
@@ -684,7 +684,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5DE62D55-8CE5-4F5C-8358-24D5E8D098D9}</Property>
-				<Property Name="Bld_version.build" Type="Int">43</Property>
+				<Property Name="Bld_version.build" Type="Int">48</Property>
 				<Property Name="Bld_version.major" Type="Int">17</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Dashboard.exe</Property>
