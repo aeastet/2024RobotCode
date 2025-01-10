@@ -538,7 +538,6 @@
 				<Item Name="SPARK Set Parameter Uint32.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Private/SPARK Set Parameter Uint32.vi"/>
 				<Item Name="SPARK Set Parameter Int32.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Private/SPARK Set Parameter Int32.vi"/>
 				<Item Name="SPARK Open Brushed.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Open Brushed.vi"/>
-				<Item Name="SPARK Set Motor Type.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/REV Robotics/REVLib/SubVI/Public/SPARK Set Motor Type.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="DC Motor Controller.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/DC Motor Controller.lvclass"/>
@@ -580,7 +579,8 @@
 			<Item Name="DriveSetSpeedDemand.vi" Type="VI" URL="../Drive/DriveSetSpeedDemand.vi"/>
 			<Item Name="ClimbSetGoDownDecriment.vi" Type="VI" URL="../Climb/ClimbSetGoDownDecriment.vi"/>
 			<Item Name="ClimbSetPullUpIncriment.vi" Type="VI" URL="../Climb/ClimbSetPullUpIncriment.vi"/>
-			<Item Name="LinearFilter_HighPassBW2.vi" Type="VI" URL="../../../../Users/easterlt/Downloads/2024RobotCode-main/2024RobotCode-main/ZoomDrive/Swerve Extra VI&apos;s/LinearFilter_HighPassBW2.vi"/>
+			<Item Name="Calculate CoTan.vi" Type="VI" URL="../../ZoomDrive/Swerve Extra VI&apos;s/Calculate CoTan.vi"/>
+			<Item Name="LinearFilter_HighPassBW2.vi" Type="VI" URL="../../ZoomDrive/Swerve Extra VI&apos;s/LinearFilter_HighPassBW2.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
